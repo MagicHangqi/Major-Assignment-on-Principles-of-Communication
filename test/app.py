@@ -5,7 +5,12 @@ import matplotlib.pyplot as plt
 from scipy.io import wavfile
 from scipy.io.wavfile import read as wav_read
 
-plt.rcParams["font.sans-serif"] = ["Microsoft YaHei", "SimHei", "DejaVu Sans"]
+plt.rcParams["font.sans-serif"] = [
+    "WenQuanYi Micro Hei",
+    "Microsoft YaHei",
+    "SimHei",
+    "DejaVu Sans",
+]
 plt.rcParams["axes.unicode_minus"] = False
 
 st.set_page_config(page_title="调制通信仿真", page_icon="🎵", layout="wide")

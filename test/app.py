@@ -1,9 +1,15 @@
 import io
+import os
 import streamlit as st
 import numpy as np
 import matplotlib.pyplot as plt
+import matplotlib.font_manager as fm
 from scipy.io import wavfile
 from scipy.io.wavfile import read as wav_read
+
+fm.fontManager.addfont(
+    os.path.join(os.path.dirname(__file__), "fonts", "wqy-microhei.ttc")
+)
 
 plt.rcParams["font.sans-serif"] = [
     "WenQuanYi Micro Hei",

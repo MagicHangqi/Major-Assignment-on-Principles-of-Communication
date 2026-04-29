@@ -95,7 +95,7 @@ PAGE_COMPARE = page.startswith("🔊")
 # --- Audio source ---
 st.sidebar.markdown("---")
 st.sidebar.subheader("🎵 音频源")
-audio_source = st.sidebar.radio("音频来源", ["📦 预置旋律 (C大调音阶)", "📤 上传 WAV 文件 (≤5秒)"])
+audio_source = st.sidebar.radio("音频来源", ["📦 预置旋律 (C大调音阶)", "📤 上传 WAV 文件 (≤20秒)"])
 if "上传" in audio_source:
     uploaded_file = st.sidebar.file_uploader("选择 WAV 文件", type=["wav", "wave"])
 else:
